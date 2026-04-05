@@ -1,6 +1,16 @@
+# Jarvis Voice Assistant Dependencies
+# Install with: pip install -r requirements.txt
+
+# Speech recognition
 SpeechRecognition>=3.10.0
+pyaudio>=0.2.14
+
+# Text-to-speech
 pyttsx3>=2.90
+
+# Browser automation
 selenium>=4.15.0
 webdriver-manager>=4.0.0
+
+# Optional: OS/GUI automation
 pyautogui>=0.9.54
-pyaudio>=0.2.14
