@@ -1,0 +1,98 @@
+Prompt 1: - 
+
+"You are a senior Python automation engineer.
+
+I want you to build a production-level desktop voice assistant (Jarvis-like) that runs locally on Windows.
+
+## Goal
+
+The assistant should:
+
+* Listen to my voice commands continuously
+* Convert speech to text
+* Understand intent from natural language
+* Execute real system actions
+* Give voice feedback
+
+## Example Command
+
+“When I say: open chrome, open youtube and play gate smashers AVL tree video”
+It should:
+
+1. Open Google Chrome
+2. Navigate to YouTube
+3. Search “Gate Smashers AVL Tree”
+4. Click and play the first video
+
+## Requirements
+
+### Core Features
+
+* Speech recognition using microphone
+* Text-to-speech response
+* Command parsing (initially rule-based, but structured for future AI integration)
+* Modular architecture (IMPORTANT)
+
+### Tech Stack
+
+* Python
+* speech_recognition
+* pyttsx3
+* selenium (browser automation)
+* pyautogui (optional for OS control)
+* subprocess / os
+
+### Architecture (STRICT)
+
+Create clean modular structure:
+
+jarvis/
+│── main.py
+│── listener.py        # voice input
+│── speaker.py        # text-to-speech
+│── command_parser.py # intent detection
+│── actions/
+│     ├── open_apps.py
+│     ├── youtube.py
+│── utils/
+│── config.py
+
+### Functional Requirements
+
+* Continuous listening loop
+* Error handling (mic failure, no internet, element not found)
+* Logging system
+* Configurable paths (like Chrome path)
+* Non-blocking execution (assistant should not freeze)
+
+### Coding Standards
+
+* Clean, readable, production-level code
+* Functions must be reusable
+* No hardcoding except config
+* Add comments explaining logic
+* Use classes where appropriate
+
+### Output Format
+
+* Give full folder structure
+* Then provide each file with complete code
+* Ensure code runs without modification
+
+### Future-Ready (IMPORTANT)
+
+Structure code so later I can:
+
+* Replace rule-based parser with LLM (OpenAI or local)
+* Add more commands easily
+* Add GUI later
+
+### Bonus (if possible)
+
+* Wake word like “Jarvis”
+* Timeout handling
+* Background listening optimization
+
+Do NOT give explanation.
+ONLY give clean, runnable project code.
+"
